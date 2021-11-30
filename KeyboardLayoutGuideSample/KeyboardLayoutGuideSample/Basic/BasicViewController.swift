@@ -5,6 +5,7 @@ class BasicViewController: UIViewController {
         let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.borderStyle = .roundedRect
+        field.placeholder = "Input here"
         return field
     }()
     
@@ -18,6 +19,7 @@ class BasicViewController: UIViewController {
     }
     
     private func setUpUI() {
+        view.backgroundColor = .systemBackground
         view.addSubview(field)
         NSLayoutConstraint.activate([
             field.centerXAnchor.constraint(equalTo: view.centerXAnchor),
