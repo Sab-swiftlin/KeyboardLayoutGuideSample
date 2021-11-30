@@ -7,8 +7,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -27,7 +25,9 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch list[indexPath.row] {
         case .basic:
-            return
+            let basicVC = BasicViewController()
+            basicVC.title = list[indexPath.row].rawValue
+            navigationController?.pushViewController(basicVC, animated: true)
         }
     }
 }
