@@ -1,8 +1,8 @@
 import UIKit
 
-class StoryboardViewController: UIViewController {
+class MultipleViewController: UIViewController {
     
-    @IBOutlet private var field: UITextField!
+    @IBOutlet private var confirmEmailField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,10 +14,8 @@ class StoryboardViewController: UIViewController {
     }
     
     private func setUpUI() {
-        let keyboardConstraint = view.keyboardLayoutGuide.topAnchor.constraint(equalTo: field.bottomAnchor, constant: 10)
-        keyboardConstraint.priority = .defaultHigh
         NSLayoutConstraint.activate([
-            keyboardConstraint
+            view.keyboardLayoutGuide.topAnchor.constraint(greaterThanOrEqualTo: confirmEmailField.bottomAnchor, constant: 10)
         ])
     }
 }
