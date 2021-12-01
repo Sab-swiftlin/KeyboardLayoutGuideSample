@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multiple Forms View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MultipleFormsViewController" customModule="KeyboardLayoutGuideSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8w-lU-1j7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AKB-Ot-q7r">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="900" id="7AY-fu-uSu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AKB-Ot-q7r" firstAttribute="bottom" secondItem="e4X-d4-BpK" secondAttribute="bottom" id="Jh6-ha-JuB"/>
+                                    <constraint firstItem="AKB-Ot-q7r" firstAttribute="width" secondItem="9tL-cW-ogn" secondAttribute="width" id="Mhp-Sk-My6"/>
+                                    <constraint firstItem="AKB-Ot-q7r" firstAttribute="leading" secondItem="e4X-d4-BpK" secondAttribute="leading" id="owv-Kx-dDT"/>
+                                    <constraint firstItem="e4X-d4-BpK" firstAttribute="trailing" secondItem="AKB-Ot-q7r" secondAttribute="trailing" id="qcy-14-eR4"/>
+                                    <constraint firstItem="AKB-Ot-q7r" firstAttribute="top" secondItem="e4X-d4-BpK" secondAttribute="top" id="r6Y-yx-ux9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="e4X-d4-BpK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9tL-cW-ogn"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="O8w-lU-1j7" secondAttribute="bottom" priority="250" id="NeF-OA-63r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O8w-lU-1j7" secondAttribute="trailing" id="cYm-2t-OfG"/>
+                            <constraint firstItem="O8w-lU-1j7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ede-0d-9Ot"/>
+                            <constraint firstItem="O8w-lU-1j7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xBj-3y-lqy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="O8w-lU-1j7" id="akz-YD-mrg"/>
+                        <outlet property="stackView" destination="AKB-Ot-q7r" id="nTg-ba-Rj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

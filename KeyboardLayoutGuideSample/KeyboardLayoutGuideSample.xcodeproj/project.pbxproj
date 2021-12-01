@@ -21,6 +21,10 @@
 		6A6CB050275669FC00E5F0F7 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CB04F275669FC00E5F0F7 /* StoryboardViewController.swift */; };
 		6A6CB0532757289400E5F0F7 /* Multiple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6CB0522757289400E5F0F7 /* Multiple.storyboard */; };
 		6A6CB055275728A200E5F0F7 /* MultipleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CB054275728A200E5F0F7 /* MultipleViewController.swift */; };
+		6A6CB05827574CDD00E5F0F7 /* MultipleForms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6CB05727574CDD00E5F0F7 /* MultipleForms.storyboard */; };
+		6A6CB05A27574CEF00E5F0F7 /* MultipleFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CB05927574CEF00E5F0F7 /* MultipleFormsViewController.swift */; };
+		6A6CB05C27574D4F00E5F0F7 /* Form.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6CB05B27574D4F00E5F0F7 /* Form.xib */; };
+		6A6CB05E27574DCE00E5F0F7 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6CB05D27574DCE00E5F0F7 /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		6A6CB04F275669FC00E5F0F7 /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		6A6CB0522757289400E5F0F7 /* Multiple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Multiple.storyboard; sourceTree = "<group>"; };
 		6A6CB054275728A200E5F0F7 /* MultipleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleViewController.swift; sourceTree = "<group>"; };
+		6A6CB05727574CDD00E5F0F7 /* MultipleForms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleForms.storyboard; sourceTree = "<group>"; };
+		6A6CB05927574CEF00E5F0F7 /* MultipleFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFormsViewController.swift; sourceTree = "<group>"; };
+		6A6CB05B27574D4F00E5F0F7 /* Form.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Form.xib; sourceTree = "<group>"; };
+		6A6CB05D27574DCE00E5F0F7 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 				6A6CB04927565F2F00E5F0F7 /* Basic */,
 				6A6CB04C275669D600E5F0F7 /* Storyboard */,
 				6A6CB0512757287500E5F0F7 /* Multiple */,
+				6A6CB05627574C8F00E5F0F7 /* MultipleForms */,
 				6A6CB02227565A1F00E5F0F7 /* Assets.xcassets */,
 				6A6CB02427565A1F00E5F0F7 /* LaunchScreen.storyboard */,
 				6A6CB02727565A1F00E5F0F7 /* Info.plist */,
@@ -164,6 +173,17 @@
 				6A6CB054275728A200E5F0F7 /* MultipleViewController.swift */,
 			);
 			path = Multiple;
+			sourceTree = "<group>";
+		};
+		6A6CB05627574C8F00E5F0F7 /* MultipleForms */ = {
+			isa = PBXGroup;
+			children = (
+				6A6CB05727574CDD00E5F0F7 /* MultipleForms.storyboard */,
+				6A6CB05927574CEF00E5F0F7 /* MultipleFormsViewController.swift */,
+				6A6CB05B27574D4F00E5F0F7 /* Form.xib */,
+				6A6CB05D27574DCE00E5F0F7 /* FormView.swift */,
+			);
+			path = MultipleForms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +292,10 @@
 			files = (
 				6A6CB02627565A1F00E5F0F7 /* LaunchScreen.storyboard in Resources */,
 				6A6CB04E275669EE00E5F0F7 /* Storyboard.storyboard in Resources */,
+				6A6CB05C27574D4F00E5F0F7 /* Form.xib in Resources */,
 				6A6CB02327565A1F00E5F0F7 /* Assets.xcassets in Resources */,
 				6A6CB0532757289400E5F0F7 /* Multiple.storyboard in Resources */,
+				6A6CB05827574CDD00E5F0F7 /* MultipleForms.storyboard in Resources */,
 				6A6CB02127565A1D00E5F0F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6CB05E27574DCE00E5F0F7 /* FormView.swift in Sources */,
 				6A6CB055275728A200E5F0F7 /* MultipleViewController.swift in Sources */,
+				6A6CB05A27574CEF00E5F0F7 /* MultipleFormsViewController.swift in Sources */,
 				6A6CB050275669FC00E5F0F7 /* StoryboardViewController.swift in Sources */,
 				6A6CB01E27565A1D00E5F0F7 /* ViewController.swift in Sources */,
 				6A6CB04B27565F4800E5F0F7 /* BasicViewController.swift in Sources */,
