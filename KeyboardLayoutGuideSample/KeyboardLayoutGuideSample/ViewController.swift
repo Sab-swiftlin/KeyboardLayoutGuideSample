@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let list: [ScreenType] = [.basic]
+    private let list: [ScreenType] = [.basic, .storyboard]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +28,15 @@ extension ViewController: UITableViewDelegate {
             let basicVC = BasicViewController()
             basicVC.title = list[indexPath.row].rawValue
             navigationController?.pushViewController(basicVC, animated: true)
+        case .storyboard:
+            guard let storyboardVC = UIStoryboard(name: "Storyboard", bundle: nil).instantiateInitialViewController() else { return }
+            storyboardVC.title = list[indexPath.row].rawValue
+            navigationController?.pushViewController(storyboardVC, animated: true)
         }
     }
 }
 
 enum ScreenType: String {
     case basic = "Basic"
+    case storyboard = "Storyboard"
 }
