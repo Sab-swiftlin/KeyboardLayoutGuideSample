@@ -14,7 +14,6 @@ class StoryboardViewController: UIViewController {
     }
     
     private func setUpUI() {
-        field.translatesAutoresizingMaskIntoConstraints = false
         let keyboardConstraint = view.keyboardLayoutGuide.topAnchor.constraint(equalTo: field.bottomAnchor, constant: 10)
         keyboardConstraint.priority = .defaultHigh
         NSLayoutConstraint.activate([
